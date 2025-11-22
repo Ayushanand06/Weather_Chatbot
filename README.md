@@ -70,5 +70,6 @@ Next.js、Groq LLM、Whisper 音声認識、OpenWeather API を活用し、リ�
 
 The following diagram illustrates the flow of data from the user's voice/text input through the translation layer, AI processing, weather API, and back to the UI.
 
+<img width="1433" height="742" alt="Screenshot 2025-11-22 165142" src="https://github.com/user-attachments/assets/b92e48dc-d2c2-47bd-82a7-6c1ecfa02bc5" />
 
-(C:\Users\hp\Pictures\Screenshots\Screenshot 2025-11-22 165142.png)
+
