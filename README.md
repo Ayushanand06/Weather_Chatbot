@@ -1,40 +1,33 @@
-Weather ChatBot — Bilingual Weather Assistant
+🤖 AI Outdoor Adventure Planner
+Live Deployment
 
-Live Deployment →
+An intelligent, multi-modal chatbot that provides weather-aware recommendations for outdoor activities. This application leverages generative AI to analyze weather forecasts in the context of a user's request, offering safe, actionable, and personalized advice in both Japanese and English.
 
-(Replace # with your deployed URL)
+This project was developed for a technical assessment and evolved into a portfolio-grade application showcasing advanced AI engineering, full-stack development, and a user-centric design philosophy.
 
-An intelligent, bilingual chatbot that accepts both voice and text, automatically detects English ↔ Japanese, and provides real-time, weather-aware recommendations using AI.
-This application uses advanced LLM reasoning, Whisper-style transcription, location awareness, and a fully responsive UI built with Next.js.
-
-This project was initially developed as a practical demo but evolved into a polished, production-grade showcase of AI engineering, full-stack development, and user-centric design.
+Chatbot Demo
 
 ✨ Key Features
-
-🧠 Conversational Memory: Maintains context across turns for natural and seamless conversations.
-
-🎙️ Multi-Modal Input: Supports both Japanese and English voice commands and typed text.
-
-🤖 AI-Powered Intent Understanding: Determines whether a request requires weather analysis, general information, or simple chat.
-
-🌐 Auto Language Detection: Detects whether the user typed in EN or JP and auto-translates to the UI language.
-
-📄 Structured Output: LLM responses can be parsed into structured data for dynamic UI rendering.
-
-🈺 Full Bilingual Interface: Instant toggle between Japanese 🇯🇵 and English 🇬🇧 — the entire conversation re-translates in real time.
-
-🎨 Polished UX: Smooth animations, message bubbles, themes, loading states, and full mobile responsiveness.
+🧠 Conversational Memory: Remembers the context of the conversation for natural follow-up questions.
+🗣️ Multi-Modal Input: Seamlessly accepts both Japanese voice commands and text input.
+🤖 AI-Powered Intent Classification: Intelligently determines whether a user's query requires a detailed weather analysis or a general chat response.
+📄 Structured JSON Output: The AI generates detailed, structured data (not just text), enabling a rich and dynamic user interface.
+🌐 Bilingual Interface: The entire frontend is internationalized, with a real-time toggle for both Japanese (ja) and English (en).
+✨ Polished UX: A full-featured chat interface with real-time updates, loading states, error handling, and a conversation reset function.
+🚀 Live Demo
+Access the live application here!
 
 🛠️ Technology Stack
 Layer	Technology	Purpose
-Frontend	Next.js (React, App Router)	Modern UI, client/server rendering
-	TypeScript	Strong typing & maintainability
-	Tailwind CSS	Responsive utility-first styling
-	lucide-react icons	UI iconography
-Backend	Next.js API Routes (/api/chat, /api/translate)	LLM orchestration, translations, transcription
-AI / Data	Groq / OpenAI LLMs	Fast reasoning, chat, translation
-	Whisper-style STT	Voice transcription (JP/EN)
-Weather	OpenWeatherMap API	Geocoding & 5-day weather forecast
-Deployment	Vercel	Frontend hosting & CI/CD
-	Render / Serverless	Backend hosting
+Frontend	Next.js (React)	For building a modern, server-aware, and performant user interface.
+TypeScript	Ensures type safety and improves code quality and maintainability.
+Tailwind CSS	For rapid, utility-first styling and creating a responsive design.
+Backend	Node.js & Express	Provides a fast, scalable, and lightweight foundation for the API server.
+AI / Data	Groq	- Whisper-Large-V3: For high-speed, accurate Japanese speech-to-text.
+- Llama 3: For all generative tasks (intent classification, entity extraction, proposal generation).
+OpenWeatherMap API	Provides free, reliable geocoding and 5-day weather forecast data.
+Deployment	Vercel	For continuous deployment and hosting of the Next.js frontend.
+Render	For continuous deployment and hosting of the Node.js backend service.
 🏛️ System Architecture
+The application follows a decoupled frontend/backend architecture. The backend acts as an intelligent orchestrator, managing multiple AI and data API calls to fulfill a user's request.
+
