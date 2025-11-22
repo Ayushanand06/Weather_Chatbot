@@ -123,7 +123,7 @@ ExampleImageURL: ${DEMO_IMAGE_URL}`
     // 8) Call model
     const completion = await groq.chat.completions.create({
       messages: apiMessages as any,
-      model: process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
+      model: process.env.GROQ_MODEL || "openai/gpt-oss-120b",
       temperature: 0.7,
       max_tokens: 1024,
     });
