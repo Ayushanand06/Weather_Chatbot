@@ -291,7 +291,7 @@ export function ChatInterface() {
         </div>
       </header>
 
-      
+      cd
 
       {/* Chat Main Area */}
       <main className="flex-1 flex justify-center">
