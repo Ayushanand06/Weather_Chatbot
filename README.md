@@ -1,37 +1,41 @@
-🤖 Weather ChatBot — Bilingual Weather Assistant (EN / JP)
+🤖 Weather ChatBot — Bilingual Weather Assistant
 
-Live Deployment: 
+Live Deployment →
 
-An intelligent, bilingual (English ↔ Japanese) weather chatbot that accepts text and voice, understands user intent, and provides weather-aware advice and recommendations. Built with a modern Next.js frontend, a small server API (Next app routes) for orchestration, Groq/OpenAI models for generation and Whisper-style transcription for voice input.
+(Replace # with your deployed URL)
 
-Key Features
+An intelligent, bilingual chatbot that accepts both voice and text, automatically detects English ↔ Japanese, and provides real-time, weather-aware recommendations using AI.
+This application uses advanced LLM reasoning, Whisper-style transcription, location awareness, and a fully responsive UI built with Next.js.
 
-🗣️ Voice + Text Input — Record audio or type messages; the bot handles both seamlessly.
+✨ Key Features
 
-🤖 Auto Language Detection — Automatically detects English/Japanese input and translates into UI language.
+🧠 Conversational Memory: Maintains context across turns for natural and seamless conversations.
 
-🌐 Bilingual UI — Full English ↔ Japanese toggle with dynamic re-translation of the entire conversation.
+🎙️ Multi-Modal Input: Supports both Japanese and English voice commands and typed text.
 
-🧠 Conversational Memory — Maintains context for follow-up questions.
+🤖 AI-Powered Intent Understanding: Determines whether a request requires weather analysis, general information, or simple chat.
 
-🎙️ Whisper-Style Transcription — High-accuracy audio transcription (JP/EN).
+🌐 Auto Language Detection: Detects whether the user typed in EN or JP and auto-translates to the UI language.
 
-🌦️ Weather-Aware Responses — Uses optional user location and external weather APIs (e.g., OpenWeatherMap).
+📄 Structured Output: LLM responses can be parsed into structured data for dynamic UI rendering.
 
-💬 Polished Chat Interface — Smooth UX, loading indicators, smart scrolling, microphone controls, theme switching.
+🈺 Full Bilingual Interface: Instant toggle between Japanese 🇯🇵 and English 🇬🇧 — the entire conversation re-translates in real time.
 
-🔁 Smart LLM Orchestration — Server builds prompts, handles history, enforces target language, and integrates context.
+🎨 Polished UX: Smooth animations, message bubbles, themes, loading states, and full mobile responsiveness.
 
-🛠️ Tech Stack
+🛠️ Technology Stack
 Layer	Technology	Purpose
-🖥️ Frontend	Next.js (React, App Router) + TypeScript	UI, chat interface, multi-modal input
-🎨 Styling	Tailwind CSS, lucide-react icons	Modern, responsive UI & iconography
-🧩 Backend	Next.js API Routes (/api/chat, /api/translate)	LLM orchestration, transcription, translation
-🧠 AI Models	Groq/OpenAI LLMs, Whisper-style STT	Chat responses, translation, speech-to-text
-🌦️ Weather	OpenWeatherMap API	Geocoding & 5-day weather forecasting
-🚀 Deployment	Vercel (frontend) + Render/Serverless (backend)	Hosting, CI/CD, and global edge network
+Frontend	Next.js (React, App Router)	Modern UI, client/server rendering
+	TypeScript	Strong typing & maintainability
+	Tailwind CSS	Responsive utility-first styling
+	lucide-react icons	UI iconography
+Backend	Next.js API Routes (/api/chat, /api/translate)	LLM orchestration, translations, transcription
+AI / Data	Groq / OpenAI LLMs	Fast reasoning, chat, translation
+	Whisper-style STT	Voice transcription (JP/EN)
+Weather	OpenWeatherMap API	Geocoding & 5-day weather forecast
+Deployment	Vercel	Frontend hosting & CI/CD
+	Render / Serverless	Backend hosting
 
-System Architecture
+  System Architecture
 
-The application follows a decoupled frontend/backend architecture. The backend acts as an intelligent orchestrator, managing multiple AI and data API calls to fulfill a user's request.
-
+The application follows a clean, decoupled architecture:
