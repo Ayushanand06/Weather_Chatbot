@@ -22,25 +22,25 @@ body {
 
 /* 1. Japanese Dark (Brown/Zen) */
 .theme-japanese-dark {
-  background: linear-gradient(180deg, #2f241d 0%, #3e342f 100%);
+  background: linear-gradient(180deg, #2f241d 0%, #68574e 100%);
   color: #e6eef6;
 }
 
 /* 2. Japanese Light (Beige/Paper) */
 .theme-japanese-light {
-  background: linear-gradient(180deg, #fdfbf7 0%, #e8e0d5 100%);
+  background: linear-gradient(180deg, #e6c789 0%, #8d6b3c 100%);
   color: #4a3b32;
 }
 
 /* 3. Normal Dark (Slate/Blue) */
 .theme-normal-dark {
-  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(180deg, #0f172a 0%, #6d87b1 100%);
   color: #e6eef6;
 }
 
 /* 4. Normal Light (White/Gray) */
 .theme-normal-light {
-  background: linear-gradient(180deg, #f8fafc 0%, #cbd5e1 100%);
+  background: linear-gradient(180deg, #4a80b7 0%, #8fb5e3 100%);
   color: #1e293b;
 }
 
