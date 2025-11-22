@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🤖 Weather ChatBot — Bilingual Weather Assistant (EN / JP)
 
-## Getting Started
+Live Deployment: 
 
-First, run the development server:
+An intelligent, bilingual (English ↔ Japanese) weather chatbot that accepts text and voice, understands user intent, and provides weather-aware advice and recommendations. Built with a modern Next.js frontend, a small server API (Next app routes) for orchestration, Groq/OpenAI models for generation and Whisper-style transcription for voice input.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🗣️ Voice + Text Input — Record audio or type messages; the bot handles both seamlessly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🤖 Auto Language Detection — Automatically detects English/Japanese input and translates into UI language.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🌐 Bilingual UI — Full English ↔ Japanese toggle with dynamic re-translation of the entire conversation.
 
-## Learn More
+🧠 Conversational Memory — Maintains context for follow-up questions.
 
-To learn more about Next.js, take a look at the following resources:
+🎙️ Whisper-Style Transcription — High-accuracy audio transcription (JP/EN).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🌦️ Weather-Aware Responses — Uses optional user location and external weather APIs (e.g., OpenWeatherMap).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+💬 Polished Chat Interface — Smooth UX, loading indicators, smart scrolling, microphone controls, theme switching.
 
-## Deploy on Vercel
+🔁 Smart LLM Orchestration — Server builds prompts, handles history, enforces target language, and integrates context.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🛠️ Tech Stack
+Layer	Technology	Purpose
+🖥️ Frontend	Next.js (React, App Router) + TypeScript	UI, chat interface, multi-modal input
+🎨 Styling	Tailwind CSS, lucide-react icons	Modern, responsive UI & iconography
+🧩 Backend	Next.js API Routes (/api/chat, /api/translate)	LLM orchestration, transcription, translation
+🧠 AI Models	Groq/OpenAI LLMs, Whisper-style STT	Chat responses, translation, speech-to-text
+🌦️ Weather	OpenWeatherMap API	Geocoding & 5-day weather forecasting
+🚀 Deployment	Vercel (frontend) + Render/Serverless (backend)	Hosting, CI/CD, and global edge network
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+System Architecture
+
+The application follows a decoupled frontend/backend architecture. The backend acts as an intelligent orchestrator, managing multiple AI and data API calls to fulfill a user's request.
+
