@@ -48,8 +48,7 @@ Whisper STT for fast bilingual transcription.
 🌐 Bilingual Output
 Instant English ↔ Japanese responses.
 
-🧹 Resettable Chat
-User can start a fresh conversation at any time.
+
 
 日本語
 
@@ -80,5 +79,3 @@ Whisper による高速な音声認識。
 🌐 日英対応のバイリンガル出力
 リアルタイムで英語/日本語に切り替え可能。
 
-🧹 会話リセット機能
-いつでもチャット履歴をリセット可能。
