@@ -49,3 +49,26 @@ Next.js、Groq LLM、Whisper 音声認識、OpenWeather API を活用し、リ�
 *   🗺️ **場所の Google マップ連携:** 地図検索と画像検索リンクを自動生成。
 *   🎤 **音声・テキスト入力対応:** Whisper による高速な音声認識。
 *   🌐 **日英対応のバイリンガル出力:** リアルタイムで英語/日本語に切り替え可能。
+
+*   ## 🛠️ Technology Stack
+
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | **Next.js (React)** | For building a modern, server-aware, and performant user interface. |
+| | **TypeScript** | Ensures type safety and improves code quality and maintainability. |
+| | **Tailwind CSS** | For rapid, utility-first styling and creating a responsive design. |
+| **Backend** | **Node.js & Express** | Provides a fast, scalable, and lightweight foundation for the API server. |
+| **AI / Data** | **Groq** | **Whisper-Large-V3:** For high-speed, accurate Japanese/English speech-to-text.<br>**Llama 3:** For generative tasks (intent classification, entity extraction, proposal generation). |
+| | **OpenWeatherMap API** | Provides free, reliable geocoding and 5-day weather forecast data. |
+| | **Google Maps API** | Generates location links and visual map previews. |
+| **Deployment** | **Vercel** | For continuous deployment and hosting of the Next.js frontend. |
+| | **Render** | For continuous deployment and hosting of the backend service. |
+
+---
+
+## 🏗️ Architecture
+
+The following diagram illustrates the flow of data from the user's voice/text input through the translation layer, AI processing, weather API, and back to the UI.
+
+
+(C:\Users\hp\Pictures\Screenshots\Screenshot 2025-11-22 165142.png)
