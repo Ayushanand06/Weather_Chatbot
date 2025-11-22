@@ -30,7 +30,7 @@ const Button = ({ onClick, disabled, className, children, type = "button", title
 
 const uiCopy = {
   en: {
-    title: "Clima.ai",
+    title: "AmeAI",
     welcome: "Just Ask the Weather",
     welcomeMsg: "Ask for outfit ideas, travel spots, or weekend plans based on the weather.",
     locating: "Locating...",
