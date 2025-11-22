@@ -35,7 +35,7 @@ const uiCopy = {
     welcomeMsg: "Ask for outfit ideas, travel spots, or weekend plans based on the weather.",
     locating: "Locating...",
     recording: "Recording...",
-    placeholder: "Type your feelings",
+    placeholder: "Suggest some outfits for tomorrow....",
     error: "Error. Try again.",
     allowLocation: "Allow location to provide local weather",
     allowButton: "Allow location",

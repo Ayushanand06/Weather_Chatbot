@@ -271,10 +271,10 @@ body {
 .theme-japanese-light .mic-btn, .theme-normal-light .mic-btn {
   background: #f1f5f9;
   border-color: #e2e8f0;
-  color: #475569;
+  color: #81a0cd;
 }
 .theme-japanese-dark .mic-btn, .theme-normal-dark .mic-btn {
-  color: #dfeffb;
+  color: #6e7d89;
 }
 .mic-btn.recording {
   background: linear-gradient(180deg, #f97316, #dc2626) !important;
