@@ -26,7 +26,7 @@ export async function POST(req: Request) {
 
     const completion = await groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "openai/gpt-oss-20b", 
+      model: "llama-3.3-70b-versatile", 
       // You can use "llama3-8b-8192" or "mixtral-8x7b-32768" on Groq usually
       // "openai/gpt-oss-20b" assumes you have access to that specific model via a specific gateway.
     });

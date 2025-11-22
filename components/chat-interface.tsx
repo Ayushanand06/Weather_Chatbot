@@ -281,7 +281,7 @@ export function ChatInterface() {
 
             <Button onClick={toggleLanguage} className="top-icon" title="Language">
               <Globe size={16} />
-              <span style={{ marginLeft: 6, fontWeight: 700, fontSize: 12 }}>{language === "en" ? "EN" : "JP"}</span>
+              <span style={{ marginLeft: 6, fontWeight: 700, fontSize: 12 }}>{language === "en" ? "EN" : "日本語"}</span>
             </Button>
 
             <Button onClick={toggleTheme} className="top-icon" title="Dark / Light">
@@ -291,17 +291,7 @@ export function ChatInterface() {
         </div>
       </header>
 
-      {/* Location Banner */}
-      {!location && (
-        <div className="max-w-6xl mx-auto w-full px-6 mt-3">
-          <div className="location-card p-3 rounded-lg bg-black/30 border border-white/5 flex items-center justify-between">
-            <div className="text-sm text-slate-100">{t.allowLocation}</div>
-            <div>
-              <button onClick={requestLocation} className="px-3 py-1 rounded-md bg-blue-600 text-white"> {t.allowButton} </button>
-            </div>
-          </div>
-        </div>
-      )}
+      
 
       {/* Chat Main Area */}
       <main className="flex-1 flex justify-center">
