@@ -39,6 +39,8 @@ Next.js、Groq LLM、Whisper 音声認識、OpenWeather API を活用し、リ�
 
 <img width="1859" height="894" alt="Screenshot 2025-11-23 035310" src="https://github.com/user-attachments/assets/0366246f-50d9-4f75-b817-2d02aa701411" />
 
+---
+
 ## Features
 
 *   🌦️ **5-Day Advanced Weather Forecast:** Detailed temperature, humidity, wind & precipitation analysis.
@@ -64,6 +66,8 @@ Next.js、Groq LLM、Whisper 音声認識、OpenWeather API を活用し、リ�
 *   🗺️ **場所の Google マップ連携:** 地図検索と画像検索リンクを自動生成。
 *   🎤 **音声・テキスト入力対応:** Whisper による高速な音声認識。
 *   🌐 **日英対応のバイリンガル出力:** リアルタイムで英語/日本語に切り替え可能。
+
+---
 
 *   ## 🛠️ Technology Stack
 
