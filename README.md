@@ -24,6 +24,13 @@ Next.js、Groq LLM、Whisper 音声認識、OpenWeather API を活用し、リ�
 
 ---
 
+## Live demo and Video
+
+* Live App: https://weather-chatbot-eta.vercel.app/
+* Demo Video: https://drive.google.com/file/d/1rGTLNeD87gQGbSBayCcyyD_2f-CVbDcO/view?usp=sharing
+
+---
+
 ## Features
 
 *   🌦️ **5-Day Advanced Weather Forecast:** Detailed temperature, humidity, wind & precipitation analysis.
